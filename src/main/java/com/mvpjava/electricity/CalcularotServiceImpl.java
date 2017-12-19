@@ -38,4 +38,13 @@ public class CalcularotServiceImpl implements CalculatorService {
 		Thread.sleep(200);
 		return "SUCCESS";
 	}
+
+	public boolean isPalimdrom(String stringPlimdrom) {
+		String revers = new StringBuffer(stringPlimdrom).reverse().toString();
+		if (stringPlimdrom.equals(revers)) {
+			return true;
+		}
+		return false;
+
+	}
 }
