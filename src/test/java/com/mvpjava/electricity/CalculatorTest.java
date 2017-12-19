@@ -17,6 +17,6 @@ class CalculatorTest {
 	@Test
 	void additionTest() {
 		when(calculatorService.add(3, 4)).thenReturn(7);
-		assertEquals(21, calculator.addValue(3, 4));
+		assertEquals(7, calculator.addValue(3, 4));
 	}
 }

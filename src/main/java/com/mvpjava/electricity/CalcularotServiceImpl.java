@@ -34,4 +34,8 @@ public class CalcularotServiceImpl implements CalculatorService {
 
 	}
 
+	public String threadSleep() throws InterruptedException {
+		Thread.sleep(200);
+		return "SUCCESS";
+	}
 }
